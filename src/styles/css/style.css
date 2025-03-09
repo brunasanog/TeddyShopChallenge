@@ -1,0 +1,120 @@
+/* General Configs */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+:root {
+  /*Fonts*/
+  --font: "Roboto Serif", serif;
+
+  /*Color palette*/
+  --color-white: #ffffff;
+  --color-off-white: #f7f2ec;
+
+  --color-light-blue: #e1ede9;
+  --color-aqua: #89d3d2;
+
+  --color-beige: #f0dacd;
+  --color-brown: #bf8b70;
+  --color-dark-brown: #29180f;
+}
+
+/* RESETING DEFAULT CONFIGS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default font */
+body {
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+/* Prevents bold fonts by default */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* Remove list bullets */
+ul {
+  list-style: none;
+}
+
+/* Remove link underline */
+a {
+  text-decoration: none;
+}
+
+/* Remove button border and background */
+button {
+  border: none;
+  background: none;
+}
+
+/* MOBILE */
+#header-discount-banner {
+  display: flex;
+  background-color: var(--color-beige);
+  color: var(--color-dark-brown);
+  overflow: hidden;
+}
+
+#header-discount-banner-text {
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.625rem;
+  width: 100%;
+  height: 2.4rem;
+
+  font-size: 0.9375rem;
+  font-weight: normal;
+
+  width: max-content;
+  white-space: nowrap;
+  animation: scroll-left 17s linear infinite;
+  overflow: visible;
+  margin: 0 0;
+}
+
+#header-discount-banner-text h2 {
+  font-size: 0.9375rem;
+  font-weight: normal;
+}
+
+#header-discount-banner-text > * {
+  margin: 0 0.9rem;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-105%);
+  }
+}
+
+/* DESKTOP*/
+@media (min-width: 1024px) {
+  #header-discount-banner-text {
+    overflow: hidden;
+    animation: none;
+    width: 100%;
+    margin: 0 3rem;
+  }
+}
+
+/* TABLET*/
+@media (min-width: 768px) {
+}
