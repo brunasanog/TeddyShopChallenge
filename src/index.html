@@ -10,76 +10,89 @@
 
 <body>
     <!-- CABEÇALHO -->
-    <header class="header">
+    <header>
 
-        <!-- Barra bateral que fala sobre descontos -->
-        <section id="header-discount-banner">
-            <aside id="header-discount-banner-text">
-                <h2>Hai bisogno di aiuto?</h2>
-                <p>Ottieni subito uno sconto del 10%:Iscriviti alla newsletter</p>
-                <p>Informazioni di consegna</p>
+        <!-- Barra de Newsletter -->
+        <section id="header-newsletter">
+            <aside id="header-newsletter-text">
+                <a href="">
+                    <p>Hai bisogno di aiuto?</p>
+                </a>
+                <a href="">
+                    <p>Ottieni subito uno sconto del 10%: Iscriviti alla newsletter</p>
+                </a>
+                <a href="">
+                    <p>Informazioni di consegna</p>
+                </a>
             </aside>
         </section>
 
         <!-- MENU -->
 
-        <section>
+        <section class="header">
             <!--Logo do Teddy Shop-->
-            <figure>
-                <img src="./assets/images/logo/bear-logo.png" alt="Bear logo">
-                <h1>Teddy Shop</h1>
+            <figure class="header-logo">
+                <img class="header-logo-bear" src="./assets/images/logo/bear-logo.png" alt="Bear logo">
+                <div class="header-logo-text">
+                    <h1 id="header-logo-text-teddy">Teddy </h1>
+                    <h1 id="header-logo-text-shop">Shop</h1>
+                </div>
             </figure>
 
-            <!-- Navegação principal -->
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li>
-                        <a href="#">Categorie</a>
-                        <img src="./assets/images/icons/menu-icons/arrow-menu.png" alt="Menu dropdown arrow">
-                        <ul>
-                            <li><a href="#">Animals</a></li>
-                            <li><a href="#">Disney</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Novità</a></li>
-                    <li><a href="#">Marchi</a></li>
-                    <li><a href="#">Carte regalo</a></li>
-                    <li><a href="#">Chi siamo</a></li>
-                </ul>
-            </nav>
+            <div id="menu-group">
+                <!-- Navegação principal -->
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li><a href="#">Home</a></li>
+                        <li id="header-menu-list-categorie">
+                            <a href="#">Categorie</a>
+                            <button class="header-nav-bar-main-menu-dropdown">
+                                <img src="./assets/images/icons/menu-icons/arrow-menu.png" alt="Menu dropdown arrow">
+                            </button>
+                            <ul id="header-menu-list-drop" class="hidden">
+                                <li><a href="#">Animals</a></li>
+                                <li><a href="#">Disney</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Novità</a></li>
+                        <li><a href="#">Marchi</a></li>
+                        <li><a href="#">Carte regalo</a></li>
+                        <li><a href="#">Chi siamo</a></li>
+                    </ul>
+                </nav>
 
-            <!-- Ícones de ações -->
-            <nav aria-label="Quick shortcuts">
-                <ul>
-                    <li>
-                        <button aria-label="Search">
-                            <img src="./assets/images/icons/menu-icons/search-menu.png" alt="Search icon">
-                        </button>
-                    </li>
-                    <li>
-                        <button aria-label="User">
-                            <img src="./assets/images/icons/menu-icons/user-menu.png" alt="User icon">
-                        </button>
-                    </li>
-                    <li>
-                        <button aria-label="Favorites">
-                            <img src="./assets/images/icons/menu-icons/heart-menu.png" alt="Favorites icon">
-                        </button>
-                    </li>
-                    <li>
-                        <button aria-label="Shopping bag">
-                            <img src="./assets/images/icons/menu-icons/shopping-bag-menu.png" alt="Shopping bag icon">
-                        </button>
-                    </li>
-                </ul>
-            </nav>
+                <!-- Ícones de ações -->
+                <nav class="header-menu" aria-label="Quick shortcuts">
+                    <ul class="header-menu-list">
+                        <li>
+                            <button aria-label="Search" id="header-menu-icon">
+                                <img src="./assets/images/icons/menu-icons/search-menu.png" alt="Search icon">
+                            </button>
+                        </li>
+                        <li>
+                            <button aria-label="User" id="header-menu-icon">
+                                <img src="./assets/images/icons/menu-icons/user-menu.png" alt="User icon">
+                            </button>
+                        </li>
+                        <li>
+                            <button aria-label="Favorites" id="header-menu-icon">
+                                <img src="./assets/images/icons/menu-icons/heart-menu.png" alt="Favorites icon">
+                            </button>
+                        </li>
+                        <li>
+                            <button aria-label="Shopping bag" id="header-menu-icon">
+                                <img src="./assets/images/icons/menu-icons/shopping-bag-menu.png"
+                                    alt="Shopping bag icon">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
 
-            <!-- Botão de compra -->
-            <button>Acquista ora</button>
+                <!-- Botão de compra -->
+                <button id="blue-button">Acquista ora</button>
+            </div>
         </section>
     </header>
-
 
 
     <!-- CORPO -->
@@ -400,7 +413,10 @@
 
         <section>
             <img src="./assets/images/logo/bear-logo.png" alt="Bear logo">
-            <h3>Teddy Shop</h3>
+            <div>
+                <h3>Teddy </h3>
+                <h3>Shop</h3>
+            </div>
         </section>
 
         <p>© 2023 TeddyShop. Tutti i diritti riservati.</p>
