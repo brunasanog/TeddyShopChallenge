@@ -100,8 +100,8 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 3.5rem 1rem 3.5rem;
-  gap: 1vw;
+  margin: 1rem 2rem;
+  gap: 1.8vw;
 }
 
 .header-logo {
@@ -133,13 +133,20 @@ button {
   align-items: center;
   justify-content: center;
   white-space: nowrap;
+  width: auto;
 }
 
 .header-menu-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
-  gap: 1.8vw;
+  gap: 1.5vw;
+
+  color: var(--color-dark-brown);
+  font-size: 1rem;
+  font-family: var(--font);
+  font-weight: 500;
 }
 
 .header-menu-list img {
@@ -159,15 +166,22 @@ button {
 #menu-group {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
-  gap: 2vw;
+  gap: 1.8vw;
 }
 
 .header-menu-icon {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   gap: 1rem;
+}
+
+#header-menu-icon {
+  display: flex;
+  align-items: center;
 }
 
 #header-menu-icon img {
@@ -189,7 +203,7 @@ button {
   font-family: var(--font);
   font-weight: 500;
 
-  padding: 0px 15px;
+  padding: 7.5px 15px;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -213,6 +227,10 @@ button {
   object-fit: cover;
 }
 
+#menu-mobile {
+  display: none;
+}
+
 /* MOBILE */
 @media (max-width: 1024px) {
   /*Newsletter*/
@@ -220,15 +238,81 @@ button {
     display: none;
   }
 
+  /* Menu Principal */
   .header {
-    justify-content: center;
+    justify-content: space-between;
+    gap: 3vw;
+    margin: 1rem;
+  }
+
+  .header-logo-bear {
+    width: 1.92rem;
+    height: 2.12rem;
+  }
+
+  .header-logo-text {
+    font-size: 0.84rem;
+  }
+
+  #header-menu-icon img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  #menu-mobile {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #blue-button {
+    display: none;
   }
 
   #menu-group {
-    display: none;
+    gap: 5vw;
   }
 }
 
 /* TABLET*/
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Menu Principal */
+  .header-logo-bear {
+    width: 2.4rem;
+    height: 2.65rem;
+  }
+
+  .header-logo-text {
+    font-size: 1rem;
+  }
+
+  #header-menu-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #menu-mobile {
+    display: none;
+  }
+
+  #menu-group {
+    gap: 1.5vw;
+  }
+
+  #nav {
+    display: flex;
+  }
+
+  .header-menu-list {
+    font-size: 0.9rem;
+  }
+
+  .header-menu-list img {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
 }
