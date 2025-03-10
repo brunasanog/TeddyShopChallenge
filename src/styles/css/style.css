@@ -69,7 +69,6 @@ button {
 }
 
 /* DESKTOP*/
-
 /*Newsletter*/
 #header-newsletter {
   display: flex;
@@ -102,6 +101,7 @@ button {
   justify-content: space-between;
   align-items: center;
   margin: 1rem 3.5rem 1rem 3.5rem;
+  gap: 1vw;
 }
 
 .header-logo {
@@ -139,7 +139,7 @@ button {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1.8vw;
 }
 
 .header-menu-list img {
@@ -157,10 +157,17 @@ button {
 
 /*Icones do Menu*/
 #menu-group {
-  padding: 0%;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  gap: 3rem;
+  gap: 2vw;
+}
+
+.header-menu-icon {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 #header-menu-icon img {
@@ -190,12 +197,34 @@ button {
   display: inline-block;
   text-decoration: none;
   white-space: nowrap;
+  max-width: 100%;
+}
+
+#body-banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+#body-banner img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 /* MOBILE */
 @media (max-width: 1024px) {
   /*Newsletter*/
   #header-newsletter {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  #menu-group {
     display: none;
   }
 }
