@@ -319,21 +319,23 @@ button {
 .plush-collection-articles {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: center;
+
   gap: 3vw;
 }
 
 .plush-collection-articles-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  flex: 1;
+
+  flex: 1 1 24.375rem;
+  max-width: 25rem;
+  min-width: 16rem;
 
   background-color: var(--color-white);
 
-  border-radius: 2rem;
+  border-radius: clamp(1rem, 2vw, 2rem);
   padding: 0.25rem;
   padding-bottom: 1.7rem;
 
@@ -341,25 +343,28 @@ button {
 }
 
 .plush-collection-articles-item img {
-  width: 24.375rem;
+  width: 100%;
+  max-width: 24.375rem;
   height: auto;
   object-fit: cover;
 }
 
 .plush-collection-articles-item-title {
-  font-size: 1.5rem;
+  font-size: 1.2vw;
   font-weight: 600;
   color: var(--color-dark-brown);
-  padding: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .plush-collection-articles-item-paragraph {
-  font-size: 1rem;
+  font-size: 0.85vw;
   font-weight: 400;
   color: var(--color-black);
   text-align: center;
 
   width: 90%;
+  display: -webkit-box;
 }
 
 /* MOBILE */
