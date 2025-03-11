@@ -435,12 +435,16 @@ button {
   }
 
   body #gund-discount-text-one {
-    border-radius: 0 0 66px 66px;
+    border-left: 2.5px var(--color-gold) solid;
+    border-bottom: 2.5px var(--color-gold) solid;
     padding: 12px 35px 12px;
     margin-right: -95px;
   }
 
   body #gund-discount-text-two {
     padding: 12px 35px 12px;
+    border-left: 2.5px var(--color-gold) solid;
+    border-bottom: 2.5px var(--color-gold) solid;
+    border-top: 2.5px var(--color-gold) solid;
   }
 }
