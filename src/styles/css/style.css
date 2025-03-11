@@ -105,6 +105,7 @@ button {
   align-items: center;
   margin: 1rem 2rem;
   gap: 1.8vw;
+  background-color: var(--color-white);
 }
 
 .header-logo {
@@ -228,6 +229,7 @@ button {
   justify-content: center;
   position: relative;
   align-items: self-end;
+  overflow: hidden;
 }
 
 #gund-discount-group {
@@ -249,7 +251,7 @@ button {
   color: var(--color-dark-brown);
   border-left: 3px var(--color-gold) solid;
   border-bottom: 3px var(--color-gold) solid;
-  box-shadow: 6px 6px 56px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 
   position: relative;
   z-index: 1;
@@ -262,12 +264,13 @@ button {
   background-color: var(--color-brown);
   color: var(--color-white);
   border: 3px var(--color-gold) solid;
-  box-shadow: -6px 0px 56px rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 4px 40px rgba(0, 0, 0, 0.2);
 
   position: relative;
   z-index: 2;
   border-radius: 0 0 66px 66px;
   padding: 18px 48px 18px;
+  overflow: hidden;
 }
 
 /*Imagem de ursos*/
@@ -373,6 +376,20 @@ button {
 
   width: 90%;
   display: -webkit-box;
+}
+
+/*SEÇÃO 3*/
+/*Header*/
+#spring-collection {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: medium italic;
+  color: var(--color-dark-brown);
 }
 
 /* MOBILE */
