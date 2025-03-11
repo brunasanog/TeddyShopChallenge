@@ -345,6 +345,9 @@ button {
     padding: 9px;
     flex-direction: column;
     align-items: center;
+    border-top: 3px var(--color-gold) solid;
+
+    box-shadow: -6px 5px 56px rgba(0, 0, 0, 0.2);
   }
 
   #gund-discount-text-one {
