@@ -17,6 +17,7 @@
   --color-dark-brown: #29180f;
 
   --color-gold: #c9b079;
+  --color-black: #000000;
 }
 
 /* Resetando configurações padrão */
@@ -283,6 +284,82 @@ button {
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+/*SEÇÃO 2*/
+/*Header*/
+.plush-collection {
+  padding: 2rem 5rem;
+  background-color: var(--color-off-white);
+}
+
+#plush-collection-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 3rem 0;
+}
+
+#plush-collection-header-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--color-dark-brown);
+}
+
+#plush-collection-header-paragraph {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-black);
+  width: 90%;
+}
+
+/*Coleção de Pelúcias*/
+.plush-collection-articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 3vw;
+}
+
+.plush-collection-articles-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  background-color: var(--color-white);
+
+  border-radius: 2rem;
+  padding: 0.25rem;
+  padding-bottom: 1.7rem;
+
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18), 0px 6px 10px rgba(0, 0, 0, 0.12);
+}
+
+.plush-collection-articles-item img {
+  width: 24.375rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.plush-collection-articles-item-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-dark-brown);
+  padding: 1rem;
+}
+
+.plush-collection-articles-item-paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-black);
+  text-align: center;
+
+  width: 90%;
 }
 
 /* MOBILE */
