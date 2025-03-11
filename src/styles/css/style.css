@@ -15,6 +15,8 @@
   --color-beige: #f0dacd;
   --color-brown: #bf8b70;
   --color-dark-brown: #29180f;
+
+  --color-gold: #c9b079;
 }
 
 /* Resetando configurações padrão */
@@ -214,12 +216,68 @@ button {
   max-width: 100%;
 }
 
-#body-banner {
-  width: 100%;
-  overflow: hidden;
+#menu-mobile {
+  display: none;
 }
 
-#body-banner img {
+/*SEÇÃO 1*/
+/*Texto promocional GUND*/
+#gund-discount {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: self-end;
+}
+
+#gund-discount-group {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+
+  width: 100%;
+  top: 0px;
+
+  font-size: 24px;
+  font-weight: 500;
+
+  padding: 0 16px;
+}
+
+#gund-discount-text-one {
+  background-color: var(--color-white);
+  color: var(--color-dark-brown);
+  border-left: 3px var(--color-gold) solid;
+  border-bottom: 3px var(--color-gold) solid;
+  box-shadow: 6px 6px 56px rgba(0, 0, 0, 0.1);
+
+  position: relative;
+  z-index: 1;
+  border-radius: 0 0 66px 66px;
+  padding: 18px 48px 18px;
+  margin-right: -125px;
+}
+
+#gund-discount-text-two {
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  border: 3px var(--color-gold) solid;
+  box-shadow: -6px 0px 56px rgba(0, 0, 0, 0.2);
+
+  position: relative;
+  z-index: 2;
+  border-radius: 0 0 66px 66px;
+  padding: 18px 48px 18px;
+}
+
+/*Imagem de ursos*/
+#gund-discount-banner {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  display: block;
+}
+
+#gund-discount-banner img {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -227,12 +285,8 @@ button {
   object-fit: cover;
 }
 
-#menu-mobile {
-  display: none;
-}
-
 /* MOBILE */
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   /*Newsletter*/
   #header-newsletter {
     display: none;
@@ -276,11 +330,58 @@ button {
   #menu-group {
     gap: 5vw;
   }
+
+  /*Texto promocional GUND*/
+  #gund-discount {
+    flex-direction: column-reverse;
+    white-space: wrap;
+    background-color: var(--color-brown);
+  }
+
+  #gund-discount-group {
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    padding: 9px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #gund-discount-text-one {
+    border-radius: 0 0 66px 66px;
+    padding: 1px 5px 1px;
+    margin-right: 0px;
+
+    border-radius: 0;
+    border: 0;
+    background-color: unset;
+    box-shadow: none;
+  }
+
+  #gund-discount-text-two {
+    padding: 1px 5px 1px;
+    font-weight: 400;
+    border-radius: 0;
+    border: 0;
+    background-color: unset;
+    box-shadow: none;
+  }
 }
 
 /* TABLET*/
 @media (min-width: 768px) and (max-width: 1024px) {
+  /*Newsletter*/
+  #header-newsletter {
+    display: none;
+  }
+
   /* Menu Principal */
+  .header {
+    justify-content: space-between;
+    gap: 3vw;
+    margin: 1rem;
+  }
+
   .header-logo-bear {
     width: 2.4rem;
     height: 2.65rem;
@@ -307,12 +408,36 @@ button {
     display: flex;
   }
 
+  #blue-button {
+    display: none;
+  }
+
+  #menu-group {
+    gap: 5vw;
+  }
+
   .header-menu-list {
-    font-size: 0.9rem;
+    font-size: 1.7vw;
   }
 
   .header-menu-list img {
     width: 0.95rem;
     height: 0.95rem;
+  }
+
+  /*Texto promocional GUND*/
+  body #gund-discount-group {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  body #gund-discount-text-one {
+    border-radius: 0 0 66px 66px;
+    padding: 12px 35px 12px;
+    margin-right: -95px;
+  }
+
+  body #gund-discount-text-two {
+    padding: 12px 35px 12px;
   }
 }
