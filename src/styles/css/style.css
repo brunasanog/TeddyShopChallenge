@@ -291,6 +291,10 @@ button {
 .plush-collection {
   padding: 2rem 5rem;
   background-color: var(--color-off-white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #plush-collection-header {
@@ -305,13 +309,15 @@ button {
   font-size: 3rem;
   font-weight: 600;
   color: var(--color-dark-brown);
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 #plush-collection-header-paragraph {
   font-size: 1.25rem;
   font-weight: 400;
-  text-align: center;
   color: var(--color-black);
+  text-align: center;
   width: 90%;
 }
 
@@ -320,8 +326,10 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 
   gap: 3vw;
+  margin-bottom: 2rem;
 }
 
 .plush-collection-articles-item {
@@ -369,6 +377,7 @@ button {
 
 /* MOBILE */
 @media (max-width: 767px) {
+  /*HEADER*/
   /*Newsletter*/
   #header-newsletter {
     display: none;
@@ -413,48 +422,95 @@ button {
     gap: 5vw;
   }
 
+  /*SEÇÃO 1*/
   /*Texto promocional GUND*/
+
   #gund-discount {
     flex-direction: column-reverse;
-    white-space: wrap;
     background-color: var(--color-brown);
   }
 
   #gund-discount-group {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 2.5vw;
+    font-weight: 700;
     position: relative;
-    padding: 9px;
-    flex-direction: column;
-    align-items: center;
-    border-top: 3px var(--color-gold) solid;
-
-    box-shadow: -6px 5px 56px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    gap: 0;
   }
 
   #gund-discount-text-one {
-    border-radius: 0 0 66px 66px;
-    padding: 1px 5px 1px;
-    margin-right: 0px;
-
-    border-radius: 0;
-    border: 0;
-    background-color: unset;
+    background-color: transparent;
     box-shadow: none;
+    border: 0;
+    padding: 12px 35px 12px;
+    margin-right: -95px;
   }
 
   #gund-discount-text-two {
-    padding: 1px 5px 1px;
-    font-weight: 400;
-    border-radius: 0;
-    border: 0;
-    background-color: unset;
+    background-color: transparent;
     box-shadow: none;
+    font-weight: 500;
+    padding: 12px 35px 12px;
+    border: 0;
+  }
+
+  /*SEÇÃO 2*/
+  /*Header*/
+  .plush-collection {
+    padding: 1rem;
+  }
+  #plush-collection-header {
+    padding: 0.8rem 0 2rem 0;
+  }
+  #plush-collection-header-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-dark-brown);
+    margin-bottom: 0.8rem;
+  }
+
+  #plush-collection-header-paragraph {
+    font-size: 0.66rem;
+    width: 90%;
+  }
+
+  /*Coleção de Pelúcias*/
+  .plush-collection-articles {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1.5rem;
+
+    flex-wrap: wrap;
+    overflow-x: visible;
+
+    width: 80%;
+  }
+
+  .plush-collection-articles-item {
+    flex: 0 0 auto;
+    max-width: 17.5rem;
+    min-width: 11.2rem;
+    border-radius: clamp(1.4rem, 1.4vw, 1.4rem);
+    padding: 0.175rem;
+    padding-bottom: 1.19rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.08);
+    scroll-snap-align: start;
+  }
+
+  .plush-collection-articles-item-title {
+    font-size: clamp(1.2rem, 4vw, 1.2rem);
+  }
+
+  .plush-collection-articles-item-paragraph {
+    font-size: clamp(0.66rem, 2vw, 0.66rem);
   }
 }
 
 /* TABLET*/
 @media (min-width: 768px) and (max-width: 1024px) {
+  /*HEADER*/
   /*Newsletter*/
   #header-newsletter {
     display: none;
@@ -510,6 +566,7 @@ button {
     height: 0.95rem;
   }
 
+  /*SEÇÃO 1*/
   /*Texto promocional GUND*/
   body #gund-discount-group {
     font-size: 15px;
@@ -528,5 +585,35 @@ button {
     border-left: 2.5px var(--color-gold) solid;
     border-bottom: 2.5px var(--color-gold) solid;
     border-top: 2.5px var(--color-gold) solid;
+  }
+
+  /*SEÇÃO 2*/
+  /*Header*/
+  #plush-collection-header {
+    padding: 1rem 0 2rem 0;
+  }
+  #plush-collection-header-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--color-dark-brown);
+    margin-bottom: 0.8rem;
+  }
+
+  #plush-collection-header-paragraph {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  /*Coleção de Pelúcias*/
+
+  .plush-collection-articles-item {
+    flex: 1 1 17.0625rem;
+    max-width: 17.5rem;
+    min-width: 11.2rem;
+    border-radius: clamp(0.7rem, 1.4vw, 1.4rem);
+    padding: 0.175rem;
+    padding-bottom: 1.19rem;
+    box-shadow: 0px 2.1px 4.2px rgba(0, 0, 0, 0.18),
+      0px 4.2px 7px rgba(0, 0, 0, 0.12);
   }
 }
