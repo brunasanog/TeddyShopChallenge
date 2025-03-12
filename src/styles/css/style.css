@@ -448,7 +448,7 @@ button {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18), 0px 6px 10px rgba(0, 0, 0, 0.12);
 }
 
-#plush-collection-articles-item-lower-product {
+.plush-collection-articles-item-lower-product {
   background-color: var(--color-off-white);
   border-top-left-radius: clamp(1rem, 2vw, 2rem);
   border-top-right-radius: clamp(1rem, 2vw, 2rem);
@@ -629,6 +629,34 @@ button {
   background-color: var(--color-slide-hover);
 }
 
+/*SEÇÃO 5*/
+/*Coleção de Pelúcias*/
+.top-plushies {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0vw;
+  background-color: var(--color-off-white);
+}
+
+#plushies {
+  gap: 2.3vw;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+#top-plushies-title {
+  max-width: 30rem;
+  position: relative;
+  top: -2.5rem;
+  margin-top: 0.5rem;
+}
+
+#top-plushies-img {
+  width: 2.5rem;
+}
+
 /* MOBILE */
 @media (max-width: 767px) {
   /*HEADER*/
@@ -784,8 +812,11 @@ button {
   #plush-gap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2vw;
+    gap: 3vw;
     justify-content: center;
+    margin-bottom: 3rem;
+    width: 80%;
+    height: auto;
   }
 
   .plush-collection-articles-item-lower {
@@ -795,14 +826,7 @@ button {
     border-radius: clamp(1rem, 1vw, 1rem);
   }
 
-  #plush-gap {
-    gap: 3vw;
-    margin-bottom: 2rem;
-    width: 80%;
-    height: auto;
-  }
-
-  #plush-collection-articles-item-lower-product {
+  .plush-collection-articles-item-lower-product {
     height: 8rem;
   }
 
@@ -861,6 +885,49 @@ button {
   .about-us-article-paragraph {
     width: 100%;
     font-size: 0.6rem;
+  }
+
+  /*SEÇÃO 5*/
+  /*Coleção de Pelúcias*/
+  #top-plushies-title {
+    margin: 0;
+    top: -1.9rem;
+  }
+  .plush-collection-articles-item-lower {
+    max-width: 100%;
+    width: auto;
+    padding: 0.13rem;
+    border-radius: clamp(1rem, 1vw, 1rem);
+  }
+
+  #plushies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3vw;
+    justify-content: center;
+    margin-bottom: 4rem;
+    width: 80%;
+    height: auto;
+  }
+
+  .plush-collection-articles-item-lower-product {
+    height: 8rem;
+  }
+
+  .plush-collection-articles-item-lower-text {
+    margin-bottom: 0.5rem;
+  }
+
+  .plush-collection-articles-item-lower-title {
+    font-size: 0.9rem;
+  }
+
+  #plush-collection-articles-item-lower-stars {
+    max-width: 4.2rem;
+  }
+
+  .plush-collection-articles-item-lower-price {
+    font-size: 0.9rem;
   }
 }
 
@@ -1030,7 +1097,7 @@ button {
     height: auto;
   }
 
-  #plush-collection-articles-item-lower-product {
+  .plush-collection-articles-item-lower-product {
     height: 8rem;
   }
 
@@ -1087,5 +1154,51 @@ button {
   .about-us-article-paragraph {
     width: 100%;
     font-size: 0.6rem;
+  }
+
+  /*SEÇÃO 5*/
+  /*Coleção de Pelúcias*/
+  .top-plushies {
+    padding: 0 0 2rem 0;
+  }
+  #top-plushies-title {
+    margin: 0;
+    top: -1.9rem;
+  }
+
+  /*Coleção de Pelúcias*/
+  .plush-collection-articles-item-lower {
+    flex: 1 1 16rem;
+    max-width: 16rem;
+    width: 14rem;
+    padding: 0.13rem;
+    padding-bottom: 0.8rem;
+  }
+
+  #plushies {
+    gap: 2vw;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+  }
+
+  .plush-collection-articles-item-lower-product {
+    height: 8rem;
+  }
+
+  .plush-collection-articles-item-lower-text {
+    margin-bottom: 0.5rem;
+  }
+
+  .plush-collection-articles-item-lower-title {
+    font-size: 0.8rem;
+  }
+
+  #plush-collection-articles-item-lower-stars {
+    max-width: 4rem;
+  }
+
+  .plush-collection-articles-item-lower-price {
+    font-size: 0.9rem;
   }
 }
