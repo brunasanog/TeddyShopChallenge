@@ -21,6 +21,7 @@
   --color-black: #000000;
 
   --color-button-shadow: #b0a89f;
+  --color-slide-hover: #3a2215;
 }
 
 /* Resetando configurações padrão */
@@ -519,6 +520,115 @@ button {
   transform: translateY(2px);
 }
 
+/*SEÇÃO 4*/
+/*Header*/
+
+/*Title*/
+.big-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.big-title img {
+  width: 3.5rem;
+}
+
+.big-title-title {
+  font-family: var(--font-serif);
+  color: var(--color-dark-brown);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/*Articles*/
+.about-us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-light-blue);
+  padding: 4rem;
+  gap: 3rem;
+}
+
+.about-us-article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+  width: 80%;
+}
+
+.about-us-article-item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  width: 23.625rem;
+  height: auto;
+
+  background-color: var(--color-white);
+  padding: 1rem;
+  gap: 0.1vw;
+  border-radius: clamp(1rem, 2vw, 2rem);
+  padding: 1rem;
+
+  border: 3px var(--color-gold) solid;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18), 0px 6px 10px rgba(0, 0, 0, 0.12);
+}
+
+.about-us-article-item img {
+  width: 3.5rem;
+}
+
+.about-us-article-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-dark-brown);
+}
+
+.about-us-article-paragraph {
+  font-family: var(--font-serif);
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color-black);
+  width: 85%;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+/*Slides*/
+/* Estilo das bolinhas */
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot:hover {
+  background-color: var(--color-slide-hover);
+}
+
 /* MOBILE */
 @media (max-width: 767px) {
   /*HEADER*/
@@ -660,8 +770,8 @@ button {
     font-weight: 600;
     color: var(--color-dark-brown);
     margin-bottom: 1.7rem;
-    width: 80%;
-    padding: 0.8rem;
+    width: 75%;
+    padding: 0.2rem;
     gap: 0rem;
   }
 
@@ -710,6 +820,47 @@ button {
 
   .plush-collection-articles-item-lower-price {
     font-size: 0.9rem;
+  }
+
+  /*SEÇÃO 4*/
+  /*Header*/
+  .about-us-article {
+    width: 100%;
+  }
+
+  .big-title {
+    flex-direction: column;
+  }
+
+  .big-title img {
+    width: 3rem;
+  }
+
+  .big-title-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-us-article-item {
+    width: 100%;
+  }
+
+  .about-us-article-item img {
+    width: 2.5rem;
+  }
+
+  .about-us-article {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .about-us-article-title {
+    font-size: 0.8rem;
+  }
+
+  .about-us-article-paragraph {
+    width: 100%;
+    font-size: 0.6rem;
   }
 }
 
@@ -907,5 +1058,34 @@ button {
     box-shadow: 0rem 0.175rem 0rem var(--color-button-shadow);
     margin-bottom: 1rem;
     margin-top: 1rem;
+  }
+
+  /*SEÇÃO 4*/
+  /*Header*/
+
+  .big-title img {
+    width: 2.5rem;
+  }
+
+  .about-us-article {
+    width: 100%;
+  }
+
+  .big-title-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .about-us-article-item img {
+    width: 2.5rem;
+  }
+
+  .about-us-article-title {
+    font-size: 0.8rem;
+  }
+
+  .about-us-article-paragraph {
+    width: 100%;
+    font-size: 0.6rem;
   }
 }
