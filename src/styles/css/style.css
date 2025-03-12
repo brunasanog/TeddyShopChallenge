@@ -393,7 +393,7 @@ button {
 }
 
 #plush-gap {
-  gap: 2vw;
+  gap: 2.3vw;
   margin-bottom: 0rem;
 }
 
@@ -654,6 +654,63 @@ button {
 
   /*SEÇÃO 3*/
   /*Header*/
+  /*Título da Seção*/
+  .title-section {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-dark-brown);
+    margin-bottom: 1.7rem;
+    width: 80%;
+    padding: 0.8rem;
+    gap: 0rem;
+  }
+
+  .title-section img {
+    width: 2rem;
+    height: auto;
+  }
+
+  /*Coleção de Pelúcias*/
+  #plush-gap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    justify-content: center;
+  }
+
+  .plush-collection-articles-item-lower {
+    max-width: 100%;
+    width: auto;
+    padding: 0.13rem;
+    border-radius: clamp(1rem, 1vw, 1rem);
+  }
+
+  #plush-gap {
+    gap: 3vw;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: auto;
+  }
+
+  #plush-collection-articles-item-lower-product {
+    height: 8rem;
+  }
+
+  .plush-collection-articles-item-lower-text {
+    margin-bottom: 0.5rem;
+  }
+
+  .plush-collection-articles-item-lower-title {
+    font-size: 0.9rem;
+  }
+
+  #plush-collection-articles-item-lower-stars {
+    max-width: 4.2rem;
+  }
+
+  .plush-collection-articles-item-lower-price {
+    font-size: 0.9rem;
+  }
 }
 
 /* TABLET*/
@@ -811,8 +868,8 @@ button {
     flex: 1 1 16rem;
     max-width: 16rem;
     width: 14rem;
-    padding-bottom: 0.8rem;
     padding: 0.13rem;
+    padding-bottom: 0.8rem;
   }
 
   #plush-gap {
