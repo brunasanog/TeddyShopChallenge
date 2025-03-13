@@ -629,6 +629,10 @@ button {
   background-color: var(--color-slide-hover);
 }
 
+#btn-two {
+  margin: 0.5rem;
+}
+
 /*SEÇÃO 5*/
 /*Coleção de Pelúcias*/
 .top-plushies {
@@ -642,8 +646,8 @@ button {
 
 #plushies {
   gap: 2.3vw;
-  margin-bottom: 3rem;
   margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 #top-plushies-title {
@@ -655,6 +659,148 @@ button {
 
 #top-plushies-img {
   width: 2.5rem;
+}
+
+/* SEÇÃO 06 */
+.especial-plush {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-off-white);
+  padding: 4rem;
+  gap: 3rem;
+}
+
+.especial-plush-articles {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Big Article */
+#especial-plush-big-article {
+  width: 40rem;
+  height: 42.2rem;
+}
+
+#especial-plush-big-article {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  overflow: hidden;
+
+  border-radius: 3.5rem;
+  border: 3px var(--color-gold) solid;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.especial-plush-big-img {
+  padding: 0;
+}
+
+.especial-plush-big-article-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 3rem 2rem 3rem;
+  line-height: 1.25;
+  gap: 1rem;
+}
+
+.especial-plush-big-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-dark-brown);
+  text-align: start;
+}
+
+.especial-plush-big-paragraph {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-dark-brown);
+  text-align: start;
+}
+
+.especial-plush-article-btn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-dark-brown);
+}
+
+.especial-plush-arrow {
+  width: 0.5rem;
+}
+
+/* Lower Articles */
+
+#lower-color-one {
+  background-color: var(--color-light-blue);
+}
+
+#lower-color-two {
+  background-color: var(--color-beige);
+}
+.especial-plush-article-lower {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40rem;
+  height: auto;
+}
+
+.especial-plush-lower-article {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-white);
+  border-radius: 2rem;
+  border: 3px var(--color-gold) solid;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+
+  width: 40rem;
+  height: 20rem;
+}
+
+.especial-plush-img {
+  width: 20rem;
+  height: 20rem;
+  padding: 0;
+}
+
+.especial-plush-article-text {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem 2rem 3rem;
+  line-height: 1.25;
+  gap: 1rem;
+}
+
+.especial-plush-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-dark-brown);
+  text-align: start;
+}
+
+.especial-plush-paragraph {
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-dark-brown);
+  text-align: start;
 }
 
 /* MOBILE */
@@ -929,6 +1075,69 @@ button {
   .plush-collection-articles-item-lower-price {
     font-size: 0.9rem;
   }
+
+  /* SEÇÃO 06 */
+
+  .especial-plush {
+    padding-top: 4rem;
+  }
+
+  .especial-plush-articles {
+    flex-direction: column;
+  }
+
+  /* Big Article */
+  #big-title-tablet {
+    flex-direction: column;
+  }
+
+  #big-title-tablet img {
+    width: 2.5rem;
+  }
+
+  #especial-plush-big-article {
+    width: 20rem;
+    height: auto;
+    border-radius: 2rem;
+  }
+
+  .especial-plush-big-article-text {
+    padding: 1rem 2rem 3rem 2rem;
+  }
+
+  .especial-plush-big-title {
+    font-size: 1.7rem;
+  }
+
+  #big-title-tablet {
+    text-align: center;
+  }
+
+  /* Lower Articles */
+  .especial-plush-article-lower {
+    width: 100%;
+    align-items: center;
+    position: relative;
+  }
+
+  .especial-plush-lower-article {
+    position: relative;
+    flex-direction: column;
+    width: 20rem;
+    height: auto;
+  }
+
+  .especial-plush-title {
+    font-size: 1.5rem;
+  }
+
+  .especial-plush-article-text {
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+  #especial-plush-img-tablet {
+    background-color: var(--color-beige);
+  }
 }
 
 /* TABLET*/
@@ -1200,5 +1409,27 @@ button {
 
   .plush-collection-articles-item-lower-price {
     font-size: 0.9rem;
+  }
+
+  /* SEÇÃO 06 */
+
+  .especial-plush {
+    padding-top: 1rem;
+  }
+
+  #big-title-tablet {
+    flex-direction: column;
+  }
+
+  #big-title-tablet img {
+    width: 2.5rem;
+  }
+
+  .especial-plush-articles {
+    flex-direction: column;
+  }
+
+  #big-title-tablet {
+    text-align: center;
   }
 }
