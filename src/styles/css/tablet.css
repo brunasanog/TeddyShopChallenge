@@ -81,6 +81,14 @@
     display: none;
   }
 
+  /*Hover dos icones*/
+  #search-btn:hover img,
+  #user-btn:hover img,
+  #favorite-btn:hover img,
+  #bag-btn:hover img {
+    content: none;
+  }
+
   /*SEÇÃO 1*/
   /*Texto promocional GUND*/
   body #gund-discount-group {

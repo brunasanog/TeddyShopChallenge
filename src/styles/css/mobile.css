@@ -58,6 +58,15 @@
     gap: 0.5rem;
   }
 
+  /*Hover dos icones*/
+  #search-btn:hover,
+  #user-btn:hover img,
+  #favorite-btn:hover,
+  #bag-btn:hover img {
+    background-image: none;
+    content: none;
+  }
+
   /* Button */
   #blue-button {
     display: none;

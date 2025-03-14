@@ -248,6 +248,58 @@ button {
   width: 8rem;
 }
 
+/*Hover e active dos icones*/
+#search-btn,
+#favorite-btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#user-btn,
+#bag-btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/*Active*/
+#search-btn.active img {
+  content: url("../../assets/images/icons/menu-icons/search-menu-hover.png");
+}
+
+#user-btn.active img {
+  content: url("../../assets/images/icons/menu-icons/user-menu-hover.png");
+}
+
+#favorite-btn.active img {
+  content: url("../../assets/images/icons/menu-icons/heart-menu-hover.png");
+}
+
+#bag-btn.active img {
+  content: url("../../assets/images/icons/menu-icons/shopping-bag-menu-hover.png");
+}
+
+/*Hover*/
+#search-btn:hover img {
+  content: url("../../assets/images/icons/menu-icons/search-menu-hover.png");
+}
+
+#user-btn:hover img {
+  content: url("../../assets/images/icons/menu-icons/user-menu-hover.png");
+}
+
+#favorite-btn:hover img {
+  content: url("../../assets/images/icons/menu-icons/heart-menu-hover.png");
+}
+
+#bag-btn:hover img {
+  content: url("../../assets/images/icons/menu-icons/shopping-bag-menu-hover.png");
+}
+
 /* Ajustes no ícone */
 .header-menu-icon img {
   width: 1.5rem;
