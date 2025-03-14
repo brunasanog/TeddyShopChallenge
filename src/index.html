@@ -35,7 +35,7 @@
                 <img class="header-logo-bear" src="./assets/images/logo/bear-logo.png" alt="Bear logo">
                 <div class="header-logo-text">
                     <h1 id="header-logo-text-teddy">Teddy </h1>
-                    <h1 id="header-logo-text-shop">Shop</h1>
+                    <h1 class="header-logo-text-shop">Shop</h1>
                 </div>
             </figure>
 
@@ -448,28 +448,37 @@
 
 
     <!-- RODAPÉ -->
-    <footer>
-        <section class="newsletter">
-            <h2>TeddyShop Newsletter</h2>
-            <p>Resta aggiornato sulle ultime novità, promozioni e offerte speciali.</p>
+    <footer id="footer">
+        <section id="footer-newsletter">
+            <div id="footer-newsletter-text">
+                <h2 id="footer-newsletter-title">TeddyShop Newsletter</h2>
+                <p id="footer-newsletter-paragraph">Resta aggiornato sulle ultime novità, promozioni e offerte speciali.
+                </p>
+            </div>
 
-            <form>
-                <label for="email">inserisci la tua email</label>
-                <input type="email" id="email" placeholder="inserisci la tua email" required>
-                <button type="submit">Isciviti adesso</button>
-            </form>
+            <div id="footer-form">
+                <form id="form">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="inserisci la tua email" required>
+                    <button type="submit">Isciviti adesso</button>
+                </form>
 
-            <p class="privacy-policy">
-                <a href="#">Iscrivendoti accetti la nostra Privacy Policy</a>
-            </p>
+                <p id="footer-privacy">
+                    <a href="#">Iscrivendoti accetti la nostra Privacy Policy</a>
+                </p>
+            </div>
         </section>
 
-        <hr>
+        <div id="line-container">
+            <hr id="line">
+        </div>
 
-        <section>
-            <section>
-                <h3>Per aiutare</h3>
-                <ul>
+
+        <section id="footer-links">
+
+            <section class="footer-links-column">
+                <h3 class="footer-links-column-title">Per aiutare</h3>
+                <ul class="footer-links-column-list">
                     <li><a href="#">Consegna</a></li>
                     <li><a href="#">Ritorno</a></li>
                     <li><a href="#">Domande frequenti</a></li>
@@ -478,9 +487,9 @@
                 </ul>
             </section>
 
-            <section>
-                <h3>Chi siamo</h3>
-                <ul>
+            <section class="footer-links-column">
+                <h3 class="footer-links-column-title">Chi siamo</h3>
+                <ul class="footer-links-column-list">
                     <li><a href="#">La nostra storia</a></li>
                     <li><a href="#">Sicurezza e idoneità</a></li>
                     <li><a href="#">Generali T $ C</a></li>
@@ -489,9 +498,9 @@
                 </ul>
             </section>
 
-            <section>
-                <h3>Commercio</h3>
-                <ul>
+            <section class="footer-links-column">
+                <h3 class="footer-links-column-title">Commercio</h3>
+                <ul class="footer-links-column-list">
                     <li><a href="#">Rivenditori esterni</a></li>
                     <li><a href="#">Diventa un rivenditore</a></li>
                     <li><a href="#">Fiere e Convegni</a></li>
@@ -500,9 +509,9 @@
                 </ul>
             </section>
 
-            <section>
-                <h3>Supporto</h3>
-                <ul>
+            <section class="footer-links-column">
+                <h3 class="footer-links-column-title">Supporto</h3>
+                <ul class="footer-links-column-list">
                     <li><a href="#">Il mio conto</a></li>
                     <li><a href="#">Contattaci</a></li>
                     <li><a href="#">Spedizione</a></li>
@@ -511,9 +520,9 @@
                 </ul>
             </section>
 
-            <section>
-                <h3>Social</h3>
-                <ul>
+            <section class="footer-links-column">
+                <h3 class="footer-links-column-title">Social</h3>
+                <ul class="footer-links-column-list">
                     <li><a href="#">Instagram</a></li>
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">Twitter</a></li>
@@ -523,15 +532,16 @@
             </section>
         </section>
 
-        <section>
-            <img src="./assets/images/logo/bear-logo.png" alt="Bear logo">
-            <div>
-                <h3>Teddy </h3>
-                <h3>Shop</h3>
+        <section class="header-logo" id="footer-logo">
+            <div id="footer-logo-complete">
+                <img class="header-logo-bear" src="./assets/images/logo/bear-logo.png" alt="Bear logo">
+                <div class="header-logo-text" id="footer-logo-text">
+                    <h3>Teddy </h3>
+                    <h3 class="header-logo-text-shop">Shop</h3>
+                </div>
             </div>
+            <p id="credits">© 2023 TeddyShop. Tutti i diritti riservati.</p>
         </section>
-
-        <p>© 2023 TeddyShop. Tutti i diritti riservati.</p>
 
     </footer>
     <script src="./scripts/script.js"></script>
