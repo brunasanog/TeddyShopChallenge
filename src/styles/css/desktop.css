@@ -167,10 +167,10 @@ button {
 .header-menu-list-link:hover {
   color: var(--color-aqua);
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
-.header-nav-bar-main-menu-dropdown:hover .header-menu-list-link {
+.header-menu-list-link:hover .header-nav-bar-main-menu-dropdown img {
   content: url("../../assets/images/icons/menu-icons/arrow-menu-azul.png");
 }
 
@@ -179,12 +179,47 @@ button {
   height: 1.5rem;
 }
 
+/*Drop do Menu*/
+
 #header-menu-list-categorie {
   display: flex;
+  position: relative;
+  align-items: center;
 }
 
 #header-menu-list-drop {
   display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: calc(100% + 1px);
+  left: 0;
+  list-style: none;
+  padding: 0rem;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  z-index: 100;
+  width: max-content; /* Largura automática */
+  min-width: 100px; /* Largura mínima */
+}
+
+#header-menu-list-drop li {
+  padding: 0.5rem 0.9375rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-dark-brown);
+  cursor: pointer;
+}
+
+#header-menu-list-drop li:hover {
+  background-color: var(--color-aqua);
+  border-radius: 6px; /* Arredondar ao passar o mouse */
+}
+
+#header-menu-list-categorie.active #header-menu-list-drop {
+  display: block;
 }
 
 /*Icones do Menu*/
