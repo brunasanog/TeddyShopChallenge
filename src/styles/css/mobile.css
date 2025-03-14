@@ -10,21 +10,22 @@
   .header {
     justify-content: space-between;
     gap: 3vw;
-    margin: 1rem;
+    margin: 1.5rem;
   }
 
   .header-logo-bear {
-    width: 1.92rem;
-    height: 2.12rem;
+    width: 2.304rem;
+    height: 2.544rem;
+    margin-bottom: 1rem;
   }
 
   .header-logo-text {
-    font-size: 0.84rem;
+    font-size: 1rem;
   }
 
-  #header-menu-icon img {
-    width: 1.4rem;
-    height: 1.4rem;
+  .header-menu-icon img {
+    width: 1.68rem;
+    height: 1.68rem;
   }
 
   #menu-mobile {
@@ -34,6 +35,31 @@
   }
 
   #nav {
+    display: none;
+  }
+
+  /* Search */
+  .header {
+    flex-direction: column;
+  }
+
+  .search-bar {
+    display: inline-block;
+    width: 100%; /* Ocupa toda a largura do container */
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  #search-btn {
+    pointer-events: none;
+  }
+
+  .header-menu {
+    gap: 0.5rem;
+  }
+
+  /* Button */
+  #blue-button {
     display: none;
   }
 

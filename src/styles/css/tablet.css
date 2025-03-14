@@ -9,37 +9,34 @@
   /* Menu Principal */
   .header {
     justify-content: space-between;
-    gap: 3vw;
+    gap: 1vw;
     margin: 1rem;
   }
 
   .header-logo-bear {
-    width: 2.4rem;
-    height: 2.65rem;
+    width: 2.2rem;
+    height: 2.45rem;
   }
 
   .header-logo-text {
     font-size: 1rem;
   }
 
-  #header-menu-icon img {
-    width: 1.5rem;
-    height: 1.5rem;
+  .header-menu-icon img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  #header-menu-list-drop {
+    min-width: 1rem;
+  }
+
+  #header-menu-list-drop li {
+    font-size: 0.6rem;
+    padding: 0.3;
   }
 
   #menu-mobile {
-    display: none;
-  }
-
-  #menu-group {
-    gap: 1.5vw;
-  }
-
-  #nav {
-    display: flex;
-  }
-
-  #blue-button {
     display: none;
   }
 
@@ -48,12 +45,40 @@
   }
 
   .header-menu-list {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
   }
 
   .header-menu-list img {
     width: 0.95rem;
     height: 0.95rem;
+  }
+
+  #nav {
+    display: flex;
+  }
+
+  /* Search */
+  .search-bar.active {
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+
+  #search-icon {
+    gap: 0.5rem;
+  }
+
+  #menu-group {
+    gap: 2vw;
+  }
+
+  .header-menu-icon {
+    gap: 0.7rem;
+  }
+
+  #blue-button {
+    display: none;
   }
 
   /*SEÇÃO 1*/
