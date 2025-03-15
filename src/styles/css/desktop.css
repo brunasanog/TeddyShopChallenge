@@ -5,6 +5,23 @@
   --font-serif: "Roboto Serif", serif;
   --font-sans: "Roboto", sans-serif;
 
+  --font-size-regular-400: 400;
+  --font-size-medium-500: 500;
+  --font-size-semibold-600: 600;
+  --font-size-extrabold-800: 800;
+
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-15: 15px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-24: 24px;
+  --font-size-36: 36px;
+  --font-size-40: 40px;
+  --font-size-48: 48px;
+
   /*Paleta de cores*/
   --color-white: #ffffff;
   --color-off-white: #f7f2ec;
@@ -96,8 +113,8 @@ button {
   height: 2.4rem;
 
   margin: 0 3rem;
-  font-size: 0.9375rem;
-  font-weight: normal;
+  font-size: var(--font-size-15);
+  font-weight: var(--font-size-regular-400);
   text-align: center;
   overflow: hidden;
 }
@@ -108,7 +125,7 @@ button {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Logo */
+/* Logo do Teddy Shop */
 .header {
   display: flex;
   flex-direction: row;
@@ -126,15 +143,15 @@ button {
 }
 
 .header-logo-bear {
-  width: 2.4rem;
-  height: 2.65rem;
+  width: 3rem;
+  height: 3.5625rem;
 }
 
 .header-logo-text {
   font-size: 1.05rem;
   color: var(--color-dark-brown);
-  font-family: "Roboto Serif", serif;
-  font-variation-settings: "wght" 600;
+  font-family: var(--font-serif);
+  font-variation-settings: "wght" var(--font-size-semibold-600);
   font-style: italic;
   line-height: 0.9;
 }
@@ -144,6 +161,14 @@ button {
 }
 
 /* Menu Principal */
+#menu-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.5vw;
+}
+
 .header-menu {
   display: flex;
   align-items: center;
@@ -158,12 +183,12 @@ button {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  gap: 1.5vw;
+  gap: 3vw;
 
   color: var(--color-dark-brown);
-  font-size: 1rem;
+  font-size: var(--font-size-18);
   font-family: var(--font-serif);
-  font-weight: 500;
+  font-weight: var(--font-size-medium-500);
 }
 
 /* Estilo para o hover e active do nav menu */
@@ -191,10 +216,11 @@ button {
   height: 1.5rem;
 }
 
-#header-menu-list-categorie {
+.header-menu-list-link {
   display: flex;
-  position: relative;
+  justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #header-menu-list-drop {
@@ -215,18 +241,19 @@ button {
 }
 
 #header-menu-list-drop li {
-  padding: 0.5rem 0.9375rem;
+  padding: 0.7rem 0.9375rem;
+  margin-top: 0.5rem;
   text-align: center;
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-size-medium-500);
   color: var(--color-dark-brown);
   cursor: pointer;
 }
 
 #header-menu-list-drop li:hover {
   background-color: var(--color-aqua);
-  border-radius: 6px;
   color: var(--color-black);
+  border-radius: 6px;
 }
 
 #header-menu-list-categorie.active #header-menu-list-drop {
@@ -257,15 +284,6 @@ button {
 .search-bar.active {
   display: inline-block;
   width: 8rem;
-}
-
-/* Estilo Menu */
-#menu-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  gap: 1.8vw;
 }
 
 .header-menu-icon {
@@ -356,9 +374,9 @@ button {
 #blue-button {
   background-color: var(--color-aqua);
   color: var(--color-white);
-  font-size: 0.9rem;
+  font-size: var(--font-size-16);
   font-family: var(--font-serif);
-  font-weight: 500;
+  font-weight: var(--font-size-medium-500);
 
   padding: 0.46875rem 0.9375rem;
   border: none;
@@ -407,13 +425,14 @@ button {
 #gund-discount-group {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
 
   width: 100%;
   top: 0px;
 
-  font-size: 24px;
-  font-weight: 500;
+  font-size: var(--font-size-24);
+  font-weight: var(--font-size-medium-500);
 
   padding: 0 16px;
 }
@@ -481,16 +500,16 @@ button {
 }
 
 #plush-collection-header-title {
-  font-size: 3rem;
-  font-weight: 600;
+  font-size: var(--font-size-48);
+  font-weight: var(--font-size-medium-500);
   color: var(--color-dark-brown);
   text-align: center;
   margin-bottom: 1rem;
 }
 
 #plush-collection-header-paragraph {
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-size-regular-400);
   color: var(--color-black);
   text-align: center;
   width: 90%;
@@ -533,21 +552,25 @@ button {
 }
 
 .plush-collection-articles-item-title {
-  font-size: 1.2vw;
-  font-weight: 600;
+  font-size: var(--font-size-24);
+  font-weight: var(--font-size-semibold-600);
   color: var(--color-dark-brown);
   padding: 0.5rem;
   margin-top: 0.5rem;
 }
 
 .plush-collection-articles-item-paragraph {
-  font-size: 0.85vw;
-  font-weight: 400;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-size-regular-400);
   color: var(--color-black);
   text-align: center;
 
   width: 90%;
   display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*SEÇÃO 3*/
@@ -575,8 +598,8 @@ button {
   flex-direction: row;
   align-items: center;
 
-  font-size: 1.5rem;
-  font-variation-settings: "wght" 500;
+  font-size: var(--font-size-24);
+  font-variation-settings: "wght" var(--font-size-medium-500);
   font-style: italic;
   color: var(--color-dark-brown);
   gap: 0.5vw;
@@ -637,8 +660,8 @@ button {
 }
 
 .plush-collection-articles-item-lower-title {
-  font-size: 1.2rem;
-  font-weight: 550;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-size-medium-500);
   color: var(--color-dark-brown);
   text-align: center;
   margin-top: 1rem;
@@ -655,8 +678,8 @@ button {
 
 .plush-collection-articles-item-lower-price {
   font-family: var(--font-sans);
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-size-semibold-600);
   color: var(--color-dark-brown);
   text-align: center;
   width: 90%;
@@ -666,8 +689,8 @@ button {
 /*Botão*/
 .button-view-more {
   font-family: var(--font-serif);
-  font-size: 1.125rem; /* 18px */
-  font-weight: 600;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-size-semibold-600);
   color: var(--color-white);
 
   background-color: var(--color-brown);
@@ -710,8 +733,8 @@ button {
 .big-title-title {
   font-family: var(--font-serif);
   color: var(--color-dark-brown);
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: var(--font-size-48);
+  font-weight: var(--font-size-semibold-600);
 }
 
 /*Articles*/
@@ -759,15 +782,15 @@ button {
 
 .about-us-article-title {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: var(--font-size-22);
+  font-weight: var(--font-size-semibold-600);
   color: var(--color-dark-brown);
 }
 
 .about-us-article-paragraph {
   font-family: var(--font-serif);
-  font-size: 0.7rem;
-  font-weight: 400;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-size-regular-400);
   color: var(--color-black);
   width: 85%;
 
@@ -884,16 +907,16 @@ button {
 
 .especial-plush-big-title {
   font-family: var(--font-serif);
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: var(--font-size-40);
+  font-weight: var(--font-size-semibold-600);
   color: var(--color-dark-brown);
   text-align: start;
 }
 
 .especial-plush-big-paragraph {
   font-family: var(--font-serif);
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-size-regular-400);
   color: var(--color-dark-brown);
   text-align: start;
 }
@@ -905,8 +928,8 @@ button {
   gap: 0.5rem;
 
   font-family: var(--font-serif);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-size-semibold-600);
   color: var(--color-dark-brown);
 }
 
@@ -960,8 +983,8 @@ button {
 }
 
 .especial-plush-title {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: var(--font-size-24);
+  font-weight: var(--font-size-semibold-600);
   margin-bottom: 1rem;
   color: var(--color-dark-brown);
   text-align: start;
@@ -969,8 +992,8 @@ button {
 
 .especial-plush-paragraph {
   font-family: var(--font-serif);
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: var(--font-size-15);
+  font-weight: var(--font-size-regular-400);
   color: var(--color-dark-brown);
   text-align: start;
 }
@@ -1025,7 +1048,8 @@ button {
 }
 
 .review-article-item-text {
-  font-size: 1rem;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-size-regular-400);
   text-align: start;
   width: 100%;
 }
@@ -1047,26 +1071,26 @@ button {
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  font-size: 1.7rem;
-  font-weight: bold;
+  font-size: var(--font-size-36);
+  font-weight: var(--font-size-medium-500);
   text-decoration: none;
 }
 
 .review-article-item-footer-cite {
-  font-size: 0.8rem;
   text-align: start;
   color: var(--color-dark-brown);
 }
 
 .cite-strong {
-  font-size: 0.87rem;
-  font-weight: 600;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-size-medium-500);
   font-style: normal;
 }
 
 .cite-normal {
   font-family: var(--font-serif);
-  font-weight: 400;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-size-regular-400);
   color: var(--color-black);
   font-style: normal;
 }
@@ -1090,12 +1114,13 @@ button {
 #footer-newsletter-title {
   font-family: var(--font-serif);
   color: var(--color-dark-brown);
-  font-size: 2.25rem;
-  font-weight: 500;
+  font-size: var(--font-size-36);
+  font-weight: var(--font-size-medium-500);
 }
 
 #footer-newsletter-paragraph {
-  font-size: 1rem;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-size-regular-400);
   color: var(--color-black);
 }
 
@@ -1110,9 +1135,9 @@ button {
 #email {
   padding: 1rem 1rem;
   border: 1px solid var(--color-black);
-  font-size: 1rem;
   font-family: var(--font-serif);
-  font-weight: 400;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-size-regular-400);
   background-color: var(--color-white);
 }
 
@@ -1121,18 +1146,18 @@ button {
   padding: 1rem 1rem;
   border: 1px solid var(--color-black);
   cursor: pointer;
-  font-size: 1rem;
   font-family: var(--font-serif);
-  font-weight: 400;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-size-regular-400);
   background-color: var(--color-brown);
 }
 
 #footer-privacy {
   text-align: right;
-  font-size: 0.75rem;
   margin-top: 0.5rem;
+  font-size: var(--font-size-12);
+  font-weight: var(--font-size-regular-400);
   font-family: var(--font-serif);
-  font-weight: 400;
 }
 
 #footer-privacy a {
@@ -1185,21 +1210,22 @@ button {
 
 .footer-links-column-title {
   font-family: var(--font-serif);
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-size-medium-500);
   color: var(--color-dark-brown);
 }
 
 .footer-links-column-list {
   font-family: var(--font-serif);
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: var(--font-size-14);
+  font-weight: var(--font-size-regular-400);
   color: var(--color-dark-brown);
 }
 
 #credits {
   color: var(--color-black);
-  font-size: 0.97rem;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-size-regular-400);
 }
 
 /*Logo*/
@@ -1209,7 +1235,7 @@ button {
 }
 
 #footer-logo-text {
-  font-size: 1.3rem;
+  font-size: var(--font-size-24);
 }
 
 #footer-logo-complete {
@@ -1227,21 +1253,11 @@ button {
   }
 
   .header-menu-list {
-    font-size: 0.9rem;
+    font-size: var(--font-size-16);
     gap: 0.8rem;
   }
 
-  #menu-group {
-    gap: 1.2vw;
-  }
-
   .header-menu-icon {
-    gap: 0.5rem;
-  }
-
-  #blue-button {
-    font-size: 0.8rem;
-    white-space: wrap;
-    padding: 0.3rem 0.7rem;
+    gap: 0.8rem;
   }
 }
