@@ -764,7 +764,7 @@ button {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 23.625rem;
+  width: 378px;
   height: auto;
   background-color: var(--color-white);
   padding: 1rem;
@@ -775,7 +775,8 @@ button {
 }
 
 .about-us-article-item img {
-  width: 3.5rem;
+  width: 53px;
+  height: 53px;
 }
 
 .about-us-article-title {
@@ -790,7 +791,7 @@ button {
   font-size: var(--font-size-14);
   font-weight: var(--font-size-regular-400);
   color: var(--color-black);
-  width: 85%;
+  width: 100%;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -817,10 +818,9 @@ button {
   cursor: pointer;
   transition: 0.3s;
   z-index: 10;
-  position: absolute;
+  position: relative;
   top: 50%;
-  transform: translateY(-50%);
-  padding: 5rem;
+  padding: 1rem;
 }
 
 .prev-slide:hover,
@@ -828,15 +828,14 @@ button {
   color: var(--color-slide-hover);
 }
 
-.prev-slide {
-  left: -4rem;
-}
-
-.next-slide {
-  right: -4rem;
-}
-
 /* Estilo das bolinhas de navegação */
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .dots {
   display: flex;
   justify-content: center;
