@@ -737,7 +737,14 @@ button {
   font-weight: var(--font-size-semibold-600);
 }
 
-/* Articles */
+/* Slides */
+#first,
+#second {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 .about-us {
   display: flex;
   align-items: center;
@@ -746,6 +753,15 @@ button {
   background-color: var(--color-light-blue);
   padding: 4rem;
   gap: 3rem;
+}
+
+.about-us-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  width: 100%;
 }
 
 .about-us-article {
@@ -797,16 +813,6 @@ button {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
-}
-
-/* Slides */
-.about-us-slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
 }
 
 .prev-slide,

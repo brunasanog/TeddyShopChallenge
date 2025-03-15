@@ -1,52 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const articlesContainer = document.querySelector(".about-us-article");
-    const articles = document.querySelectorAll(".about-us-article-item");
+    const firstGroup = document.getElementById("first");
+    const secondGroup = document.getElementById("second");
     const dots = document.querySelectorAll(".dot");
     const prevButton = document.querySelector(".prev-slide");
     const nextButton = document.querySelector(".next-slide");
 
-    const articlesPerPage = 1; // Quantidade de artigos visíveis por vez
-    let currentIndex = 0;
-    const totalArticles = articles.length;
+    let currentIndex = 0; // 0 = first, 1 = second
 
-    // Função para atualizar o slider
     function updateSlider() {
-        let offset = -(currentIndex * (articles[0].offsetWidth + 30)); // 30px de margem
-        articlesContainer.style.transform = `translateX(${offset}px)`;
+        if (currentIndex === 0) {
+            firstGroup.style.display = "flex"; // Mostra o primeiro grupo
+            secondGroup.style.display = "none"; // Esconde o segundo grupo
+        } else {
+            firstGroup.style.display = "none"; // Esconde o primeiro grupo
+            secondGroup.style.display = "flex"; // Mostra o segundo grupo
+        }
 
         // Atualiza os dots
         dots.forEach((dot, i) => {
-            if (i === currentIndex) {
-                dot.classList.add("active");
-            } else {
-                dot.classList.remove("active");
-            }
+            dot.classList.toggle("active", i === currentIndex);
         });
     }
 
-    // Função para avançar para o próximo conjunto de artigos
     function nextSlide() {
-        currentIndex++;
-        if (currentIndex >= totalArticles) {
-            currentIndex = 0;
-        }
+        currentIndex = (currentIndex + 1) % 2; // Alterna entre 0 e 1
         updateSlider();
     }
 
-    // Função para voltar para o conjunto anterior de artigos
     function prevSlide() {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = totalArticles - 1;
-        }
+        currentIndex = (currentIndex - 1 + 2) % 2; // Alterna entre 0 e 1
         updateSlider();
     }
 
-    // Adiciona os eventos aos botões
-    prevButton.addEventListener("click", prevSlide);
-    nextButton.addEventListener("click", nextSlide);
-
-    // Adiciona os eventos às bolinhas (dots)
     dots.forEach((dot, i) => {
         dot.addEventListener("click", () => {
             currentIndex = i;
@@ -54,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Inicia o slider corretamente
-    updateSlider();
+    prevButton.addEventListener("click", prevSlide);
+    nextButton.addEventListener("click", nextSlide);
+
+    updateSlider(); // Inicia com o primeiro grupo visível
 });
