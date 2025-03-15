@@ -1,4 +1,3 @@
-/* Configurações Gerais */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 
 :root {
@@ -12,10 +11,12 @@
 
   --color-light-blue: #e1ede9;
   --color-aqua: #89d3d2;
+  --color-dark-blue: #78c0b8;
 
   --color-beige: #f0dacd;
   --color-brown: #bf8b70;
   --color-dark-brown: #29180f;
+  --color-chocolate: #3b2c21;
 
   --color-gold: #c9b079;
   --color-black: #000000;
@@ -24,7 +25,7 @@
   --color-slide-hover: #3a2215;
 }
 
-/* Resetando configurações padrão */
+/* Reseta as configurações padrões */
 *,
 *::before,
 *::after {
@@ -33,7 +34,7 @@
   box-sizing: border-box;
 }
 
-/* Define a fonte Padrão */
+/* Define a fonte padrão */
 body {
   font-family: var(--font-serif);
   line-height: 1.5;
@@ -165,6 +166,7 @@ button {
   font-weight: 500;
 }
 
+/* Estilo para o hover e active do nav menu */
 .header-menu-list-link:hover {
   color: var(--color-aqua);
   cursor: pointer;
@@ -172,15 +174,23 @@ button {
 }
 
 .header-menu-list-link:hover .header-nav-bar-main-menu-dropdown img {
-  content: url("../../assets/images/icons/menu-icons/arrow-menu-azul.png");
+  content: url("../../assets/images/icons/menu-icons/arrow-menu-hover.png");
 }
 
+.header-menu-list-link a.active {
+  color: var(--color-dark-blue);
+}
+
+.header-menu-list-link.active .header-nav-bar-main-menu-dropdown img {
+  content: url("../../assets/images/icons/menu-icons/arrow-menu-active.png");
+}
+
+/*Drop do Menu Categoria*/
 .header-menu-list img {
   width: 1.5rem;
   height: 1.5rem;
 }
 
-/*Drop do Menu*/
 #header-menu-list-categorie {
   display: flex;
   position: relative;
@@ -216,6 +226,7 @@ button {
 #header-menu-list-drop li:hover {
   background-color: var(--color-aqua);
   border-radius: 6px;
+  color: var(--color-black);
 }
 
 #header-menu-list-categorie.active #header-menu-list-drop {
@@ -367,13 +378,19 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-#blue-button:active {
+#blue-button.active {
   background-color: var(--color-brown);
   color: var(--color-white);
   box-shadow: inset 0 2px 6px var(--color-brown);
 }
 
+/* Menu Mobile */
 #menu-mobile {
+  display: none;
+  color: var(--color-aqua);
+}
+
+#close-menu {
   display: none;
 }
 
