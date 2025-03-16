@@ -148,6 +148,24 @@ button {
 .header-logo-bear {
   width: 3rem;
   height: 3.5625rem;
+  transition: transform 0.3s ease;
+}
+
+.header-logo-bear:hover {
+  animation: swing 1s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes swing {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(20px) rotate(15deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
 }
 
 .header-logo-text {
@@ -450,7 +468,7 @@ button {
   position: relative;
   z-index: 1;
   border-radius: 0 0 66px 66px;
-  padding: 18px 48px 18px;
+  padding: 21px 48px 18px;
   margin-right: -125px;
 }
 
