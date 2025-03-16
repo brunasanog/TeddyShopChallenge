@@ -337,6 +337,7 @@
 
   .big-title {
     flex-direction: column;
+    width: 90%;
   }
 
   .big-title img {

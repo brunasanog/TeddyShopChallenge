@@ -90,7 +90,7 @@ prevBtn.addEventListener("click", prevSlide);
 
 updateDots(currentIndex);
 
-// Evita a seleção de texto durante o arrasto
+// Não seleciona texto
 document.addEventListener('mousedown', () => {
     document.body.style.userSelect = 'none';
 });
