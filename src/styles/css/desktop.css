@@ -40,6 +40,9 @@
 
   --color-button-shadow: #b0a89f;
   --color-slide-hover: #3a2215;
+
+  --color-success: #4f9772;
+  --color-error: #b9554a;
 }
 
 /* Reseta as configurações padrões */
@@ -1256,7 +1259,7 @@ button {
   color: var(--color-black);
 }
 
-/*Formulário*/
+/* Formulário */
 #footer-form {
   display: flex;
   flex-direction: column;
@@ -1271,6 +1274,31 @@ button {
   font-size: var(--font-size-16);
   font-weight: var(--font-size-regular-400);
   background-color: var(--color-white);
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Quando clica no input */
+#email:focus {
+  border: 2px solid var(--color-dark-brown);
+}
+
+#message {
+  margin-top: 8px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.error {
+  color: var(--color-error);
 }
 
 #form button {
@@ -1282,6 +1310,12 @@ button {
   font-size: var(--font-size-16);
   font-weight: var(--font-size-regular-400);
   background-color: var(--color-brown);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#form button:hover {
+  background-color: var(--color-dark-brown);
+  transition: all 0.3s ease-in-out;
 }
 
 #footer-privacy {
@@ -1290,12 +1324,17 @@ button {
   font-size: var(--font-size-12);
   font-weight: var(--font-size-regular-400);
   font-family: var(--font-serif);
+  transition: transform 0.3s ease;
 }
 
 #footer-privacy a {
   text-decoration: none;
   color: var(--color-black);
   border-bottom: 1px solid var(--color-black);
+}
+
+#footer-privacy:hover {
+  transform: perspective(1rem) scale(1.02);
 }
 
 #line-container {
