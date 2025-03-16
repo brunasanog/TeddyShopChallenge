@@ -1262,6 +1262,23 @@ button {
 
 #reviews-img {
   width: 2.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+#reviews-img:hover {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .review-article-item-text {
