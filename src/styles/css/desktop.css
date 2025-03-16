@@ -780,7 +780,7 @@ button {
 }
 
 .big-title img:hover {
-  transform: rotate(180deg); /* Gira 25 graus suavemente */
+  transform: rotate(180deg);
 }
 
 .big-title-title {
@@ -842,7 +842,7 @@ button {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 80%; /* mudar largura  */
+  width: 80%;
 
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
@@ -1191,7 +1191,7 @@ button {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 80%; /* mudar largura  */
+  width: 80%;
 
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
@@ -1530,7 +1530,7 @@ button {
 /* Pequenos ajustes */
 @media (min-width: 1400px) and (max-width: 1600px) {
   .about-us-slider {
-    width: 100% !important; /* mudar largura  */
+    width: 100% !important;
   }
 }
 
@@ -1554,6 +1554,6 @@ button {
   }
 
   .about-us-slider {
-    width: 105% !important; /* mudar largura  */
+    width: 105% !important;
   }
 }

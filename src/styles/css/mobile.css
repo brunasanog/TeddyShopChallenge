@@ -7,22 +7,10 @@
 
   /*Paleta de cores*/
   --color-white: #ffffff;
-  --color-off-white: #f7f2ec;
-
-  --color-light-blue: #e1ede9;
-  --color-aqua: #89d3d2;
-  --color-dark-blue: #78c0b8;
-
   --color-beige: #f0dacd;
   --color-brown: #bf8b70;
   --color-dark-brown: #29180f;
   --color-chocolate: #3b2c21;
-
-  --color-gold: #c9b079;
-  --color-black: #000000;
-
-  --color-button-shadow: #b0a89f;
-  --color-slide-hover: #3a2215;
 }
 
 @media (max-width: 767px) {
@@ -517,7 +505,7 @@
     font-size: 1rem;
     text-align: center;
     display: -webkit-box;
-    -webkit-line-clamp: 6; /* Limita a 6 linhas */
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

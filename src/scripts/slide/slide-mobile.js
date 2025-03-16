@@ -64,7 +64,7 @@ function scrollToIndex(index) {
     }, 100);
 }
 
-// Drag functionality
+// Drag
 slider.addEventListener("mousedown", (e) => {
     isDragging = true;
     startX = e.pageX - slider.offsetLeft;

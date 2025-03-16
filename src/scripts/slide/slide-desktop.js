@@ -100,6 +100,7 @@ document.addEventListener('mouseup', () => {
     document.body.style.userSelect = '';
 });
 
+
 // Slider Section Seven
 const reviewSlider = document.querySelector(".review-slider");
 const reviewSlides = document.querySelectorAll(".review-article-item");
