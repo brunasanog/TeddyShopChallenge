@@ -837,6 +837,10 @@ button {
   scroll-snap-align: center;
 }
 
+.about-us-article-item:hover {
+  transform: scale(1.02);
+}
+
 .about-us-slider {
   display: flex;
   align-items: center;
@@ -1065,6 +1069,13 @@ button {
   font-size: var(--font-size-16);
   font-weight: var(--font-size-semibold-600);
   color: var(--color-dark-brown);
+
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.especial-plush-article-btn:hover {
+  transform: translateX(2px) translateY(-3px);
+  color: var(--color-gold);
 }
 
 .especial-plush-arrow {
@@ -1184,6 +1195,10 @@ button {
   flex-shrink: 0;
   flex-grow: 0;
   scroll-snap-align: center;
+}
+
+.review-article-item:hover {
+  transform: scale(1.02);
 }
 
 .review-slider {
