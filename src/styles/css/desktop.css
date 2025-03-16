@@ -491,6 +491,11 @@ button {
   overflow: hidden;
   height: auto;
   display: block;
+  transition: transform 1s ease-in-out;
+}
+
+#gund-discount-banner:hover {
+  transform: scale(1.03);
 }
 
 #gund-discount-banner img {
@@ -563,6 +568,13 @@ button {
   padding-bottom: 1.7rem;
 
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18), 0px 6px 10px rgba(0, 0, 0, 0.12);
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.plush-collection-articles-item:hover {
+  transform: translateY(-5px) scale(1.05);
 }
 
 .plush-collection-articles-item img {
@@ -639,6 +651,11 @@ button {
 .title-section img {
   width: 3rem;
   height: auto;
+  transition: transform 0.8s ease-in-out;
+}
+
+.title-section img:hover {
+  transform: rotate(180deg);
 }
 
 /*Coleção de Pelúcias*/
@@ -660,6 +677,14 @@ button {
   padding-bottom: 1rem;
 
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18), 0px 6px 10px rgba(0, 0, 0, 0.12);
+
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.plush-collection-articles-item-lower:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2), 0px 10px 16px rgba(0, 0, 0, 0.15);
 }
 
 .plush-collection-articles-item-lower-product {
@@ -723,16 +748,18 @@ button {
 
   box-shadow: 0rem 0.25rem 0rem var(--color-button-shadow);
   margin-bottom: 5rem;
+
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.button-view-more:hover {
+  transform: translateY(-0.125rem);
+  background-color: var(--color-gold);
 }
 
 .button-view-more:active {
   box-shadow: 0rem 0.125rem 0rem var(--color-button-shadow);
   transform: translateY(0.125rem);
-}
-
-.button-view-more:active {
-  box-shadow: 0px 2px 0px var(--color-button-shadow);
-  transform: translateY(2px);
 }
 
 /*SEÇÃO 4*/
@@ -749,6 +776,11 @@ button {
 
 .big-title img {
   width: 3.5rem;
+  transition: transform 1s ease-in-out;
+}
+
+.big-title img:hover {
+  transform: rotate(180deg); /* Gira 25 graus suavemente */
 }
 
 .big-title-title {
@@ -928,6 +960,11 @@ button {
 
 #top-plushies-img {
   width: 2.5rem;
+  transition: transform 0.8s ease, filter 0.5s ease;
+}
+
+#top-plushies-img:hover {
+  transform: rotate(20deg) scale(1.1);
 }
 
 /* SEÇÃO 06 */
@@ -950,7 +987,28 @@ button {
   width: 100%;
 }
 
-/* Big Article */
+/* Animação */
+#big-title-heart:hover {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Artigos grandes */
+.especial-plush-big-img {
+  padding: 0;
+}
+
 #especial-plush-big-article {
   width: 40rem;
   height: 42.2rem;
@@ -965,10 +1023,12 @@ button {
   border-radius: 3.5rem;
   border: 3px var(--color-gold) solid;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.especial-plush-big-img {
-  padding: 0;
+#especial-plush-big-article:hover {
+  transform: scale(1.05);
 }
 
 .especial-plush-big-article-text {
@@ -1011,8 +1071,7 @@ button {
   width: 0.5rem;
 }
 
-/* Lower Articles */
-
+/* Artigos Pequenos*/
 #lower-color-one {
   background-color: var(--color-light-blue);
 }
@@ -1040,6 +1099,11 @@ button {
 
   width: 40rem;
   height: 20rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.especial-plush-lower-article:hover {
+  transform: scale(1.05);
 }
 
 .especial-plush-img {
@@ -1402,6 +1466,12 @@ button {
   font-size: var(--font-size-18);
   font-weight: var(--font-size-medium-500);
   color: var(--color-dark-brown);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-links-column-title:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .footer-links-column-list {
@@ -1409,6 +1479,15 @@ button {
   font-size: var(--font-size-14);
   font-weight: var(--font-size-regular-400);
   color: var(--color-dark-brown);
+}
+
+.footer-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-link:hover {
+  transform: perspective(1rem) scale(1.07);
+  color: var(--color-brown);
 }
 
 #credits {
