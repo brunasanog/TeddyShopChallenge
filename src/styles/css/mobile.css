@@ -334,9 +334,6 @@
 
   /*SEÇÃO 4*/
   /*Header*/
-  .about-us-article {
-    width: 100%;
-  }
 
   .big-title {
     flex-direction: column;
@@ -351,16 +348,29 @@
     text-align: center;
   }
 
-  .about-us-article-item {
+  .about-us {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    gap: 1rem;
+  }
+  .about-us-article {
     width: 100%;
+  }
+
+  .about-us-article-item {
+    width: 103%;
+    height: auto;
   }
 
   .about-us-article-item img {
     width: 2.5rem;
+    height: auto;
   }
 
   .about-us-article {
-    flex-direction: column;
+    flex-direction: row;
     gap: 5vw;
   }
 
