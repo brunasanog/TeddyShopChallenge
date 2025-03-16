@@ -333,8 +333,7 @@
   }
 
   /*SEÇÃO 4*/
-  /*Header*/
-
+  /*Título*/
   .big-title {
     flex-direction: column;
     width: 90%;
@@ -349,6 +348,7 @@
     text-align: center;
   }
 
+  /* Artigos */
   .about-us {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -491,8 +491,7 @@
     background-color: var(--color-beige);
   }
   /* SEÇÃO 07 */
-  /*Header*/
-
+  /*Título*/
   #reviews-img {
     width: 2rem;
   }
@@ -503,9 +502,10 @@
     top: -4.5rem;
   }
 
+  /* Artigos */
+
   .review-article {
     width: 100%;
-    flex-direction: column;
     gap: 1.5rem;
   }
 

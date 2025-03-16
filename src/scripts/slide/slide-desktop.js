@@ -1,3 +1,4 @@
+// Slider Section Four
 const slider = document.querySelector(".about-us-slider");
 const slides = document.querySelectorAll(".about-us-article-item");
 const nextBtn = document.querySelector(".next-slide");
@@ -89,6 +90,108 @@ nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
 
 updateDots(currentIndex);
+
+// Não seleciona texto
+document.addEventListener('mousedown', () => {
+    document.body.style.userSelect = 'none';
+});
+
+document.addEventListener('mouseup', () => {
+    document.body.style.userSelect = '';
+});
+
+// Slider Section Seven
+const reviewSlider = document.querySelector(".review-slider");
+const reviewSlides = document.querySelectorAll(".review-article-item");
+const reviewNextBtn = document.querySelector(".review-next-slide");
+const reviewPrevBtn = document.querySelector(".review-prev-slide");
+const reviewDotsContainer = document.querySelector(".review-dots");
+
+let reviewCurrentIndex = 0;
+let isReviewScrolling = false;
+let isReviewDragging = false;
+let reviewStartX;
+let reviewScrollLeft;
+
+function updateReviewDots(index) {
+    const dots = document.querySelectorAll(".review-dot");
+    dots.forEach(dot => dot.classList.remove("active"));
+    if (dots[index]) {
+        dots[index].classList.add("active");
+    }
+}
+
+function scrollToReviewIndex(index) {
+    const cardWidth = reviewSlides[0].offsetWidth;
+
+    if (isReviewScrolling) return;
+
+    isReviewScrolling = true;
+
+    reviewSlider.scrollTo({ left: index * cardWidth, behavior: "smooth" });
+    updateReviewDots(index);
+
+    setTimeout(() => {
+        isReviewScrolling = false;
+    }, 100);
+}
+
+// Navegação Review
+function nextReviewSlide() {
+    reviewCurrentIndex = (reviewCurrentIndex + 1) % (reviewSlides.length - 2);
+    scrollToReviewIndex(reviewCurrentIndex);
+}
+
+function prevReviewSlide() {
+    reviewCurrentIndex = (reviewCurrentIndex - 1 + reviewSlides.length) % reviewSlides.length;
+    scrollToReviewIndex(reviewCurrentIndex);
+}
+
+// Drag Review
+reviewSlider.addEventListener("mousedown", (e) => {
+    isReviewDragging = true;
+    reviewStartX = e.pageX - reviewSlider.offsetLeft;
+    reviewScrollLeft = reviewSlider.scrollLeft;
+    reviewSlider.style.cursor = "grabbing";
+});
+
+reviewSlider.addEventListener("mouseleave", () => {
+    isReviewDragging = false;
+    reviewSlider.style.cursor = "grab";
+});
+
+reviewSlider.addEventListener("mouseup", () => {
+    isReviewDragging = false;
+    reviewSlider.style.cursor = "grab";
+});
+
+reviewSlider.addEventListener("mousemove", (e) => {
+    if (!isReviewDragging) return;
+    e.preventDefault();
+    const x = e.pageX - reviewSlider.offsetLeft;
+    const walk = (x - reviewStartX) * 2;
+    reviewSlider.scrollLeft = reviewScrollLeft - walk;
+
+    const cardWidth = reviewSlides[0].offsetWidth;
+    const newIndex = Math.round(reviewSlider.scrollLeft / cardWidth);
+    if (newIndex !== reviewCurrentIndex) {
+        reviewCurrentIndex = newIndex;
+        updateReviewDots(reviewCurrentIndex);
+    }
+});
+
+// Dots Review
+reviewDotsContainer.addEventListener("click", (e) => {
+    if (e.target.classList.contains("review-dots")) {
+        reviewCurrentIndex = parseInt(e.target.dataset.index);
+        scrollToReviewIndex(reviewCurrentIndex);
+    }
+});
+
+reviewNextBtn.addEventListener("click", nextReviewSlide);
+reviewPrevBtn.addEventListener("click", prevReviewSlide);
+
+updateReviewDots(reviewCurrentIndex);
 
 // Não seleciona texto
 document.addEventListener('mousedown', () => {

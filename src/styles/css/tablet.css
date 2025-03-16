@@ -335,25 +335,54 @@
   /* SEÇÃO 07 */
   /*Header*/
 
-  #reviews-img {
-    width: 2rem;
-  }
-
-  #reviews-title {
-    top: -3.5rem;
+  .review {
+    gap: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1rem;
   }
 
   .review-article {
     width: 100%;
   }
 
+  .review-article-item {
+    width: 31.33%;
+  }
+
+  #reviews-img {
+    width: 2rem;
+  }
+
+  #reviews-title {
+    top: -4.5rem;
+  }
+
   .review-article-item-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: center;
     display: -webkit-box;
     -webkit-line-clamp: 6; /* Limita a 6 linhas */
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  /* Fontes */
+  .review-article-circle {
+    font-size: 1rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .cite-strong {
+    font-size: 0.8rem;
+  }
+
+  .cite-normal {
+    font-size: 0.7rem;
   }
 
   /*FOOTER*/
