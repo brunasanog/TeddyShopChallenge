@@ -2,11 +2,9 @@
 
 **TeddyShop** is an e-commerce homepage developed as part of the **TeddyShopChallenge**, during my internship at Compass UOL. This project consists of the homepage for a fictional plush toy store, where users can explore customized products and navigate the site smoothly.
 
-<br>
-
 ![App Screenshot](https://github.com/brunasanog/TeddyShopChallenge/blob/feature/final-adjust/src/assets/images/readme/readme-img.png)
 
-<br>
+---
 
 ### **Project Structure**
 
@@ -17,8 +15,6 @@ The project is organized for easy navigation and maintenance, including:
 - **`/css`**: Contains the CSS files responsible for styling the layout, ensuring a clean and responsive design.
 - **`/script`**: Contains the JavaScript files that add interactivity and dynamic features to the site.
 
-<br>
-
 ### **Technologies Used**
 
 This project was built using the following technologies:
@@ -27,8 +23,6 @@ This project was built using the following technologies:
 - **CSS3**: Using Flexbox and Grid Layout for a responsive and modern design.
 - **Vanilla JavaScript**: For implementing interactivity and DOM manipulation.
 - **Git**: For version control and collaboration throughout the development process.
-
-<br>
 
 ## **Getting Started**
 
@@ -44,25 +38,23 @@ To view this project, follow these steps:
    ```
 3. Open the `index.html` file in your browser to view the homepage.
 
-<br>
-
 ## **Conclusion**
 
 Building **TeddyShop** was a great opportunity to apply my front-end knowledge, transform a Figma design into a functional application, and enhance my web development skills. Additionally, I had the chance to explore new techniques and tools that further enriched my experience.
 
 <br>
-<br>
+
+---
+
+---
+
 <br>
 
 # **Teddy Shop - Página Inicial da Loja de Pelúcias** 🧸✨
 
 **TeddyShop** é uma tela Home Page Ecommerce desenvolvida como parte do **TeddyShopChallenge**, durante meu estágio na Compass UOL. O projeto consiste na página inicial de uma loja fictícia de pelúcias, onde os usuários podem explorar produtos personalizados e navegar pelo site de forma fluida.
 
-<br>
-
 ![Captura de Tela do App](https://github.com/brunasanog/TeddyShopChallenge/blob/feature/final-adjust/src/assets/images/readme/readme-img.png)
-
-<br>
 
 ### **Estrutura do Projeto**
 
@@ -73,8 +65,6 @@ O projeto é organizado prezando a facilidade de navegação e manutenção, inc
 - **`/css`**: Contém os arquivos CSS responsáveis pela estilização do layout, garantindo um design limpo e responsivo.
 - **`/script`**: Contém os arquivos JavaScript que adicionam interatividade e recursos dinâmicos ao site.
 
-<br>
-
 ### **Tecnologias Utilizadas**
 
 Este projeto foi construído utilizando as seguintes tecnologias:
@@ -83,8 +73,6 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 - **CSS3**: Utilizando Flexbox e Grid Layout para um design responsivo e moderno.
 - **JavaScript Vanilla**: Para implementar recursos interativos e manipulação do DOM.
 - **Git**: Para controle de versão e colaboração durante o processo de desenvolvimento.
-
-<br>
 
 ## **Como Começar**
 
@@ -100,8 +88,10 @@ Para visualizar este projeto, siga os passos abaixo:
    ```
 3. Abra o arquivo `index.html` no seu navegador para visualizar a página inicial.
 
-<br>
-
 ## **Conclusão**
 
 O desenvolvimento do **TeddyShop** foi uma ótima oportunidade para aplicar meus conhecimentos em front-end, transformar um design do Figma em uma aplicação funcional e evoluir minhas habilidades em desenvolvimento web. Além disso, pude explorar novas técnicas e ferramentas que enriqueceram ainda mais minha experiência.
+
+---
+
+---
