@@ -44,10 +44,6 @@ Building **TeddyShop** was a great opportunity to apply my front-end knowledge, 
 
 ---
 
----
-
-<br>
-
 # **Teddy Shop - Página Inicial da Loja de Pelúcias** 🧸✨
 
 **TeddyShop** é uma tela Home Page Ecommerce desenvolvida como parte do **TeddyShopChallenge**, durante meu estágio na Compass UOL. O projeto consiste na página inicial de uma loja fictícia de pelúcias, onde os usuários podem explorar produtos personalizados e navegar pelo site de forma fluida.
