@@ -4,7 +4,7 @@
 
 <br>
 
-![App Screenshot](https://github.com/brunasanog/TeddyShop/blob/main/assets/readme-img.png)
+![App Screenshot](https://github.com/brunasanog/TeddyShopChallenge/blob/feature/final-adjust/src/assets/images/readme/readme-img.png)
 
 <br>
 
@@ -60,7 +60,7 @@ Building **TeddyShop** was a great opportunity to apply my front-end knowledge, 
 
 <br>
 
-![Captura de Tela do App](https://github.com/brunasanog/TeddyShop/blob/main/assets/readme-img.png)
+![Captura de Tela do App](https://github.com/brunasanog/TeddyShopChallenge/blob/feature/final-adjust/src/assets/images/readme/readme-img.png)
 
 <br>
 
