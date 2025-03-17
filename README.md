@@ -4,8 +4,6 @@
 
 ![App Screenshot](https://github.com/brunasanog/TeddyShopChallenge/blob/feature/final-adjust/src/assets/images/readme/readme-img.png)
 
----
-
 ### **Project Structure**
 
 The project is organized for easy navigation and maintenance, including:
@@ -91,7 +89,3 @@ Para visualizar este projeto, siga os passos abaixo:
 ## **Conclusão**
 
 O desenvolvimento do **TeddyShop** foi uma ótima oportunidade para aplicar meus conhecimentos em front-end, transformar um design do Figma em uma aplicação funcional e evoluir minhas habilidades em desenvolvimento web. Além disso, pude explorar novas técnicas e ferramentas que enriqueceram ainda mais minha experiência.
-
----
-
----
